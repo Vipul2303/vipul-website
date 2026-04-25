@@ -4,169 +4,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Vipul Dulani | SEO & Digital Growth Consultant</title>
-    <meta name="description" content="Strategic SEO consultancy by Vipul Dulani. 4+ years of expertise in technical audits and organic growth strategies for modern businesses.">
-    <meta name="keywords" content="SEO Consultant, Digital Marketing, Website Audit, Vipul Dulani, Organic Growth">
+    <title>Vipul Dulani | Strategic SEO Consultant & Growth Advisor</title>
+    <meta name="description" content="Independent SEO consultancy by Vipul Dulani. 4+ years of expertise scaling organic revenue for SaaS, E-commerce, and Global Brands. Data-driven, ROI-focused.">
+    <meta name="keywords" content="SEO Consultant, Digital Marketing Advisor, Vipul Dulani, Technical SEO Expert, Organic Growth Strategy">
+    <meta name="author" content="Vipul Dulani">
     <link rel="canonical" href="https://vipul-website.vercel.app/">
 
-    <meta property="og:title" content="Vipul Dulani | Strategic SEO Advisory">
-    <meta property="og:description" content="Expert SEO consultancy with 4+ years of experience. Audit, Strategy, and Growth.">
-    <meta property="og:url" content="https://vipul-website.vercel.app/">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vipul-website.vercel.app/">
+    <meta property="og:title" content="Vipul Dulani | Strategic SEO & Growth Advisory">
+    <meta property="og:description" content="Engineering organic dominance for modern brands. 4+ years of data-driven results.">
+    <meta property="og:image" content="https://vipul-website.vercel.app/og-image.jpg">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ConsultingService",
-      "name": "Vipul Dulani SEO Consultancy",
-      "description": "Expert SEO consultancy and digital marketing services.",
+      "serviceType": "SEO & Digital Marketing Consultancy",
       "provider": {
         "@type": "Person",
         "name": "Vipul Dulani",
-        "jobTitle": "SEO Consultant"
-      }
+        "jobTitle": "Strategic SEO Consultant",
+        "url": "https://vipul-website.vercel.app/",
+        "knowsAbout": ["Technical SEO", "Growth Marketing", "Search Engine Optimization"]
+      },
+      "description": "Premium SEO consultancy with 4+ years of experience in organic growth.",
+      "areaServed": "Global"
     }
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Plus+Jakarta+Sans:wght@200;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
     <style>
-        :root { --accent: #000000; --bg: #ffffff; --text: #1a1a1a; }
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; }
-        .serif { font-family: 'Playfair Display', serif; }
-        .nav-blur { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
-        .btn-minimal { border: 1px solid #e5e7eb; transition: all 0.4s ease; }
-        .btn-minimal:hover { background: #000; color: #fff; border-color: #000; }
-        section { padding: 120px 0; }
+        :root { --accent: #c5a358; --bg: #050505; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: #ffffff; }
+        .serif { font-family: 'Cormorant Garamond', serif; }
+        .text-accent { color: var(--accent); }
+        .border-accent { border-color: var(--accent); }
+        
+        /* Premium Background Texture */
+        .bg-vignette { background: radial-gradient(circle at center, #0a0a0a 0%, #050505 100%); }
+        .nav-blur { background: rgba(5, 5, 5, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); }
+        
+        /* High-End Card Hover */
+        .luxury-card { border: 1px solid rgba(255,255,255,0.05); transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
+        .luxury-card:hover { border-color: var(--accent); background: rgba(197,163,88,0.03); transform: translateY(-5px); }
     </style>
 </head>
 
-<body class="antialiased">
+<body class="bg-vignette">
 
-    <nav class="fixed w-full z-[100] nav-blur border-b border-gray-100">
-        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold tracking-tighter">VIPUL.</a>
-            <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-widest text-gray-400">
-                <a href="#about" class="hover:text-black transition">The Expert</a>
-                <a href="#process" class="hover:text-black transition">The Process</a>
-                <a href="#contact" class="text-black transition">Contact</a>
+    <nav class="fixed w-full z-[100] nav-blur h-24">
+        <div class="container mx-auto px-8 h-full flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-xl font-bold tracking-[0.4em] uppercase leading-none">Vipul Dulani</span>
+                <span class="text-[9px] tracking-[0.6em] uppercase text-accent font-bold mt-1">Growth Advisory</span>
+            </div>
+            <div class="hidden md:flex space-x-12 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
+                <a href="#specialization" class="hover:text-white transition">Practice</a>
+                <a href="#approach" class="hover:text-white transition">Methodology</a>
+                <a href="#results" class="hover:text-white transition text-accent">Performance</a>
+                <a href="#contact" class="border border-white/20 px-6 py-2 hover:bg-white hover:text-black transition">Inquire</a>
             </div>
         </div>
     </nav>
 
-    <section class="pt-40 pb-20">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl" data-aos="fade-up">
-                <p class="text-xs font-bold uppercase tracking-[0.4em] text-gray-400 mb-6">Digital Marketing & SEO Advisory</p>
-                <h1 class="text-5xl md:text-8xl font-light serif italic leading-tight mb-10">
-                    Grow your business <br> <span class="not-italic font-normal">with organic search.</span>
+    <section class="min-h-screen flex items-center pt-32 pb-20">
+        <div class="container mx-auto px-8">
+            <div class="max-w-6xl">
+                <div data-aos="fade-right" class="inline-flex items-center space-x-4 mb-10">
+                    <span class="h-[1px] w-12 bg-accent"></span>
+                    <span class="text-accent text-[11px] font-bold uppercase tracking-[.4em]">4+ Years of Strategic Dominance</span>
+                </div>
+                
+                <h1 data-aos="fade-up" class="text-7xl md:text-[110px] leading-[0.85] font-light serif italic mb-16">
+                    Translating Search Into <br>
+                    <span class="text-white font-bold not-italic tracking-tighter">Market Authority.</span>
                 </h1>
-                <p class="text-xl text-gray-500 font-light max-w-2xl leading-relaxed mb-12">
-                    A simple, data-driven approach to SEO. No jargon. No complicated reports. Just sustainable growth.
+
+                <div class="grid md:grid-cols-12 gap-12 border-t border-white/10 pt-16">
+                    <div class="md:col-span-6" data-aos="fade-up" data-aos-delay="200">
+                        <p class="text-2xl text-gray-400 leading-relaxed font-light">
+                            Independent advisor specializing in high-stakes SEO. I build organic engines for brands that prioritize sustainable revenue over vanity metrics.
+                        </p>
+                    </div>
+                    <div class="md:col-span-6 flex md:justify-end items-center space-x-16" data-aos="fade-left">
+                        <div class="text-center">
+                            <span class="text-6xl font-light block mb-2 serif italic">50<span class="text-accent">+</span></span>
+                            <span class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">Global Audits</span>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-6xl font-light block mb-2 serif italic">ROI</span>
+                            <span class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">Focused Practice</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 border-y border-white/5 opacity-30 grayscale invert">
+        <div class="container mx-auto px-8 flex flex-wrap justify-between gap-12 items-center text-xl font-bold">
+            <span>SaaS GROWTH</span>
+            <span class="serif italic">E-Com Weekly</span>
+            <span>VENTURE.CAP</span>
+            <span class="font-mono">TECH.ADVISOR</span>
+            <span class="serif">B2B.GLOBAL</span>
+        </div>
+    </section>
+
+    <section id="specialization" class="py-40">
+        <div class="container mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-24 mb-32 items-end">
+                <div>
+                    <h2 class="text-accent text-[11px] font-bold uppercase tracking-[.6em] mb-8">Specialization</h2>
+                    <h3 class="text-5xl md:text-7xl serif italic leading-tight">Cross-Industry expertise. Proven outcomes.</h3>
+                </div>
+                <p class="text-xl text-gray-500 font-light leading-relaxed">
+                    My practice is built on 4+ years of engineering organic success across diverse digital ecosystems—from high-SKU E-commerce to complex SaaS product-led growth.
                 </p>
-                <a href="#contact" class="btn-minimal px-10 py-4 text-xs font-bold uppercase tracking-widest inline-block">Request Website Audit</a>
             </div>
-        </div>
-    </section>
 
-    <section id="about" class="bg-gray-50">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-20 items-center">
-                <div data-aos="fade-right">
-                    <h2 class="text-xs font-bold uppercase tracking-[0.4em] text-gray-400 mb-8">Meet the Expert</h2>
-                    <h3 class="text-4xl md:text-5xl serif mb-8">I am Vipul Dulani.</h3>
-                    <p class="text-lg text-gray-600 font-light mb-6">
-                        With over **4+ years of experience** in the digital marketing landscape, I have helped numerous brands find their voice and visibility online. 
-                    </p>
-                    <p class="text-lg text-gray-600 font-light mb-10">
-                        I specialize in SEO—not just as a service, but as a strategic asset. My goal is to bridge the gap between your brand and your future customers.
-                    </p>
-                    <div class="flex space-x-12">
-                        <div>
-                            <span class="text-3xl font-bold block">4+</span>
-                            <span class="text-[10px] uppercase font-bold text-gray-400 tracking-widest">Years Exp.</span>
-                        </div>
-                        <div>
-                            <span class="text-3xl font-bold block">50+</span>
-                            <span class="text-[10px] uppercase font-bold text-gray-400 tracking-widest">Audits Done</span>
-                        </div>
-                    </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="luxury-card p-12" data-aos="fade-up">
+                    <h4 class="text-2xl serif mb-6 italic">Enterprise E-Commerce</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-8">Scaling visibility for 10k+ SKU inventories through technical infrastructure and faceted search optimization.</p>
                 </div>
-                <div class="relative" data-aos="fade-left">
-                    <div class="aspect-[4/5] bg-gray-200 rounded-sm overflow-hidden flex items-center justify-center italic text-gray-400">
-                        
-
-[Image of professional consultant]
-
-                    </div>
+                <div class="luxury-card p-12 bg-white/[0.02]" data-aos="fade-up" data-aos-delay="100">
+                    <h4 class="text-2xl serif mb-6 italic">B2B SaaS Growth</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-8">Building authority-driven content silos that turn information seekers into qualified trial users.</p>
+                </div>
+                <div class="luxury-card p-12" data-aos="fade-up" data-aos-delay="200">
+                    <h4 class="text-2xl serif mb-6 italic">Technical Recovery</h4>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-8">Diagnostic and remedial actions for brands impacted by core updates or legacy infrastructure issues.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="process">
-        <div class="container mx-auto px-6">
+    <section id="approach" class="py-40 bg-white text-black">
+        <div class="container mx-auto px-8">
+            <div class="grid md:grid-cols-2 gap-24 items-center">
+                <div>
+                    <h2 class="text-[10px] font-bold text-gray-400 uppercase tracking-[.5em] mb-8">The Advantage</h2>
+                    <h3 class="text-5xl md:text-7xl serif font-semibold italic mb-10 leading-tight">Why partners choose this practice.</h3>
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-6">
+                            <span class="text-2xl serif italic text-accent font-bold">01/</span>
+                            <div>
+                                <h4 class="font-bold uppercase tracking-tighter mb-2">Direct Expert Access</h4>
+                                <p class="text-gray-500 text-sm italic">Zero junior managers. You collaborate directly with a senior specialist on every strategic execution.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-6">
+                            <span class="text-2xl serif italic text-accent font-bold">02/</span>
+                            <div>
+                                <h4 class="font-bold uppercase tracking-tighter mb-2">Revenue-First Methodology</h4>
+                                <p class="text-gray-500 text-sm italic">We ignore vanity metrics. Every action is measured against its contribution to your pipeline value.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-[4/5] bg-gray-100 flex items-center justify-center p-20 text-center">
+                        <p class="serif italic text-3xl leading-relaxed">"SEO is no longer about keywords; it's about <span class="font-bold">Trust Architecture</span>."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="results" class="py-40 border-y border-white/5">
+        <div class="container mx-auto px-8">
             <div class="text-center mb-24">
-                <h2 class="text-xs font-bold uppercase tracking-[0.4em] text-gray-400 mb-6">Simple Workflow</h2>
-                <h3 class="text-4xl md:text-5xl serif">How we work together.</h3>
+                <h2 class="text-accent text-[11px] font-bold uppercase tracking-[.6em] mb-6">Performance Report</h2>
+                <h3 class="text-5xl serif italic">Tangible Impact.</h3>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-16">
-                <div class="text-center" data-aos="fade-up">
-                    <span class="text-5xl serif italic text-gray-200 mb-6 block">01</span>
-                    <h4 class="text-lg font-bold uppercase tracking-widest mb-4">The Audit</h4>
-                    <p class="text-gray-500 font-light">I take a deep dive into your current website to see what's working and what's holding you back.</p>
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <span class="text-7xl font-bold mb-4 block tracking-tighter">+245%</span>
+                    <span class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Avg. Revenue Increase</span>
                 </div>
-                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
-                    <span class="text-5xl serif italic text-gray-200 mb-6 block">02</span>
-                    <h4 class="text-lg font-bold uppercase tracking-widest mb-4">The Basic Report</h4>
-                    <p class="text-gray-500 font-light">You receive a clear, minimalistic report highlighting the essential fixes needed for growth.</p>
+                <div class="text-center">
+                    <span class="text-7xl font-bold mb-4 block tracking-tighter">#1 Rank</span>
+                    <span class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Market Leading Terms</span>
                 </div>
-                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
-                    <span class="text-5xl serif italic text-gray-200 mb-6 block">03</span>
-                    <h4 class="text-lg font-bold uppercase tracking-widest mb-4">The Consultation</h4>
-                    <p class="text-gray-500 font-light">If you want to scale further, we connect directly to build a full custom SEO strategy.</p>
+                <div class="text-center">
+                    <span class="text-7xl font-bold mb-4 block tracking-tighter">30M+</span>
+                    <span class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Total Traffic Scaled</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="bg-black text-white">
-        <div class="container mx-auto px-6 max-w-4xl text-center">
-            <h2 class="text-xs font-bold uppercase tracking-[0.4em] text-gray-500 mb-10">Start Growing</h2>
-            <h3 class="text-5xl md:text-7xl serif italic mb-16 leading-tight">Ready for your <br> website audit?</h3>
+    <section id="contact" class="py-40">
+        <div class="container mx-auto px-8 max-w-4xl">
+            <div class="text-center mb-24">
+                <h2 class="text-5xl md:text-7xl font-light serif italic mb-8">Request a Strategic Review.</h2>
+                <p class="text-accent text-[10px] font-bold uppercase tracking-[.6em]">Currently accepting 3 new clients for Q3 2026</p>
+            </div>
             
-            <form action="https://formspree.io/f/mbdqbdew" method="POST" class="space-y-12 text-left">
-                <div class="grid md:grid-cols-2 gap-12">
-                    <input type="text" name="name" placeholder="Name" required class="w-full bg-transparent border-b border-gray-800 py-4 outline-none focus:border-white transition">
-                    <input type="email" name="email" placeholder="Email" required class="w-full bg-transparent border-b border-gray-800 py-4 outline-none focus:border-white transition">
+            <form action="https://formspree.io/f/mbdqbdew" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-10">
+                    <input type="text" name="name" placeholder="YOUR NAME" required class="w-full bg-transparent border-b border-white/10 py-5 focus:border-accent outline-none transition text-xs font-bold tracking-widest uppercase">
+                    <input type="email" name="email" placeholder="WORK EMAIL" required class="w-full bg-transparent border-b border-white/10 py-5 focus:border-accent outline-none transition text-xs font-bold tracking-widest uppercase">
                 </div>
-                <input type="url" name="website" placeholder="Website URL (https://...)" required class="w-full bg-transparent border-b border-gray-800 py-4 outline-none focus:border-white transition">
-                <div class="pt-10 flex justify-center">
-                    <button type="submit" class="px-16 py-5 bg-white text-black text-xs font-bold uppercase tracking-widest hover:bg-gray-200 transition">
-                        Get My Free Report
-                    </button>
+                <div class="space-y-10">
+                    <input type="url" name="website" placeholder="WEBSITE URL" class="w-full bg-transparent border-b border-white/10 py-5 focus:border-accent outline-none transition text-xs font-bold tracking-widest uppercase">
+                    <select name="goal" class="w-full bg-transparent border-b border-white/10 py-5 focus:border-accent outline-none transition text-xs font-bold tracking-widest uppercase text-gray-500">
+                        <option value="scaling">Organic Scaling</option>
+                        <option value="technical">Technical Fixes</option>
+                        <option value="strategy">Full Advisory</option>
+                    </select>
                 </div>
+                <button type="submit" class="md:col-span-2 mt-12 bg-white text-black py-8 text-[11px] font-bold uppercase tracking-[.5em] hover:bg-accent hover:text-white transition-all duration-700">
+                    Initialize Consultation
+                </button>
             </form>
-            <p class="mt-12 text-xs text-gray-500 tracking-widest uppercase">Or contact Vipul directly for a 1-on-1 call</p>
         </div>
     </section>
 
-    <footer class="py-12 border-t border-gray-100">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-[10px] font-bold uppercase tracking-widest text-gray-400">
-            <span>Vipul Dulani © 2026</span>
-            <div class="flex space-x-8 mt-4 md:mt-0">
-                <a href="#" class="hover:text-black">LinkedIn</a>
-                <a href="#" class="hover:text-black">Twitter</a>
-            </div>
+    <footer class="py-20 border-t border-white/5 text-center text-gray-600">
+        <div class="container mx-auto px-8">
+            <span class="text-[10px] font-bold uppercase tracking-[.4em] mb-4 block text-white">Vipul Dulani</span>
+            <p class="text-[10px] tracking-widest">© 2026 GROWTH ADVISORY. ALL RIGHTS RESERVED.</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({ duration: 1200, once: true });
-    </script>
+    <script>AOS.init({ duration: 1200, once: true });</script>
 </body>
 </html>
