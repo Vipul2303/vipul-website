@@ -3,215 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vipul Dulani | Premium SEO & Digital Marketing Consultant</title>
-    <meta name="description" content="Vipul Dulani - SEO & Digital Marketing Consultant with 4+ years of experience helping businesses grow organically.">
-    <meta name="keywords" content="SEO Expert India, Digital Marketing Consultant, Vipul Dulani SEO">
-    <meta name="author" content="Vipul Dulani">
-    <meta property="og:title" content="Vipul Dulani - SEO Consultant">
-    <meta property="og:description" content="Grow your business with proven SEO strategies">
-    <meta property="og:type" content="website">
-    <link rel="icon" href="/favicon.ico">
-   
+    <title>Vipul Dulani | SEO & Digital Growth Architect</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); }
-        .gradient-text { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .btn-gradient { background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%); transition: all 0.3s ease; }
-        .btn-gradient:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 10px 20px -5px rgba(99, 102, 241, 0.4); }
-        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
-        .card-hover:hover { transform: translateY(-10px); border-color: #6366f1; }
+        :root { --accent: #6366f1; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; color: #1a1a1a; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .glass-header { background: rgba(255, 255, 255, 0.8); backdrop-filter: saturate(180%) blur(20px); }
+        .premium-shadow { box-shadow: 0 20px 50px rgba(0,0,0,0.04); }
+        .gradient-border { border: 1px solid; border-image: linear-gradient(to right, #e2e8f0, #ffffff) 1; }
+        .bg-mesh { background-color: #ffffff; background-image: radial-gradient(at 0% 0%, hsla(253,16%,7%,1) 0, transparent 50%), radial-gradient(at 50% 0%, hsla(225,39%,30%,1) 0, transparent 50%), radial-gradient(at 100% 0%, hsla(339,49%,30%,1) 0, transparent 50%); background-opacity: 0.05; }
+        .dot-pattern { background-image: radial-gradient(#e5e7eb 1px, transparent 1px); background-size: 20px 20px; }
     </style>
 </head>
-<body class="bg-[#fafafa] text-[#1d1d1f]" x-data="{ mobileMenu: false }">
 
-    <nav class="fixed w-full z-[100] glass-nav border-b border-gray-100">
-        <div class="container mx-auto px-6 h-20 flex justify-between items-center">
-            <a href="#" class="text-2xl font-extrabold tracking-tighter">VIPUL<span class="text-indigo-600">.</span></a>
-            
-            <div class="hidden md:flex space-x-10 text-sm font-semibold text-gray-600">
-                <a href="#services" class="hover:text-black transition">Services</a>
-                <a href="#results" class="hover:text-black transition">Results</a>
-                <a href="#process" class="hover:text-black transition">Process</a>
-                <a href="#about" class="hover:text-black transition">About</a>
+<body x-data="{ mobileMenu: false, activeProcess: 1 }">
+
+    <nav class="fixed w-full z-[100] glass-header border-b border-gray-100/50">
+        <div class="container mx-auto px-6 h-24 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-[0.2em] uppercase">Vipul Dulani<span class="text-indigo-600">.</span></a>
+            <div class="hidden md:flex space-x-12 text-[13px] font-bold uppercase tracking-widest text-gray-500">
+                <a href="#services" class="hover:text-black transition">Expertise</a>
+                <a href="#process" class="hover:text-black transition">Methodology</a>
+                <a href="#results" class="hover:text-black transition">Impact</a>
             </div>
-
-            <div class="hidden md:block">
-                <a href="#contact" class="btn-gradient text-white px-7 py-3 rounded-full text-sm font-bold">Free Consultation</a>
-            </div>
-
-            <button @click="mobileMenu = !mobileMenu" class="md:hidden text-2xl">
-                <span x-show="!mobileMenu">☰</span>
-                <div x-show="mobileMenu" @click.outside="mobileMenu=false">
-            </button>
-        </div>
-
-        <div x-show="mobileMenu" x-transition class="absolute top-20 left-0 w-full bg-white border-b md:hidden flex flex-col p-6 space-y-4 font-bold shadow-xl">
-            <a href="#services" @click="mobileMenu = false">Services</a>
-            <a href="#results" @click="mobileMenu = false">Results</a>
-            <a href="#process" @click="mobileMenu = false">Process</a>
-            <a href="#contact" @click="mobileMenu = false" class="text-indigo-600">Get Started</a>
+            <a href="#contact" class="hidden md:block bg-black text-white px-8 py-4 rounded-full text-xs font-bold tracking-widest hover:bg-indigo-600 transition-all duration-500">Book Strategy Call</a>
         </div>
     </nav>
 
-    <section class="relative pt-40 pb-24 overflow-hidden">
-        <div class="container mx-auto px-6 text-center">
-            <div data-aos="fade-up" class="inline-flex items-center space-x-2 bg-indigo-50 text-indigo-700 px-4 py-2 rounded-full mb-8">
-                <span class="relative flex h-2 w-2">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-600"></span>
-                </span>
-                <span class="text-xs font-bold uppercase tracking-widest">Available for Q3 Projects</span>
-            </div>
-            
-            <h1 data-aos="fade-up" data-aos-delay="100" class="text-5xl md:text-8xl font-extrabold tracking-tight mb-8 leading-[1.1]">
-                Scale Your Revenue <br>With <span class="gradient-text">Organic Search.</span>
-            </h1>
-            
-            <p data-aos="fade-up" data-aos-delay="200" class="text-gray-500 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-medium">
-                I help modern brands dominate the first page of Google through data-driven SEO strategies and technical excellence.
-            </p>
-
-            <div data-aos="fade-up" data-aos-delay="300" class="flex flex-col sm:flex-row justify-center gap-5">
-                <a href="#contact" class="btn-gradient text-white px-10 py-5 rounded-2xl font-bold text-lg">Start Growing Now</a>
-                <a href="#results" class="bg-white border border-gray-200 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-gray-50 transition">View Case Studies</a>
-            </div>
-
-            <div data-aos="fade-in" data-aos-delay="500" class="mt-20 pt-10 border-t border-gray-100 flex flex-wrap justify-center gap-12 grayscale opacity-40">
-                <div class="text-lg font-bold">4+ Years Experience</div>
-                <div class="text-lg font-bold">50+ Sites Audited</div>
-                <div class="text-lg font-bold">Technical Specialist</div>
-                <div class="text-lg font-bold">Growth Partner</div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="py-24 bg-[#f2f2f7]">
+    <section class="relative pt-48 pb-32 dot-pattern">
         <div class="container mx-auto px-6">
-            <div class="mb-16">
-                <h2 data-aos="fade-right" class="text-4xl font-extrabold mb-4">Core Expertise</h2>
-                <p class="text-gray-500 font-medium">Focused strategies built for sustainable ROI.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div data-aos="fade-up" class="card-hover bg-white p-10 rounded-[2.5rem] border border-transparent shadow-sm">
-                    <div class="mb-8 text-3xl">🚀</div>
-                    <h3 class="text-2xl font-bold mb-4">Technical SEO</h3>
-                    <p class="text-gray-500 leading-relaxed mb-6">Optimizing your site's core structure to maximize crawlability and indexing speed.</p>
-                    <ul class="text-sm space-y-2 font-semibold text-indigo-600 uppercase tracking-tight">
-                        <li>• Core Web Vitals</li>
-                        <li>• Schema Markup</li>
-                        <li>• Architecture Audit</li>
-                    </ul>
+            <div class="max-w-5xl mx-auto text-center">
+                <div data-aos="fade-down" class="mb-8 inline-block px-6 py-2 border border-gray-200 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] text-gray-400">
+                    Est. 2020 • Global SEO Consultant
                 </div>
-                <div data-aos="fade-up" data-aos-delay="100" class="card-hover bg-white p-10 rounded-[2.5rem] border border-transparent shadow-sm">
-                    <div class="mb-8 text-3xl">✍️</div>
-                    <h3 class="text-2xl font-bold mb-4">SEO Strategy</h3>
-                    <p class="text-gray-500 leading-relaxed mb-6">Developing content roadmaps that target high-intent keywords your customers search for.</p>
-                    <ul class="text-sm space-y-2 font-semibold text-indigo-600 uppercase tracking-tight">
-                        <li>• Competitor Analysis</li>
-                        <li>• Keyword Research</li>
-                        <li>• Content Silos</li>
-                    </ul>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="200" class="card-hover bg-white p-10 rounded-[2.5rem] border border-transparent shadow-sm">
-                    <div class="mb-8 text-3xl">📊</div>
-                    <h3 class="text-2xl font-bold mb-4">Growth Audit</h3>
-                    <p class="text-gray-500 leading-relaxed mb-6">A deep-dive analysis identifying exactly why your traffic is stagnant and how to fix it.</p>
-                    <ul class="text-sm space-y-2 font-semibold text-indigo-600 uppercase tracking-tight">
-                        <li>• Conversion Optimization</li>
-                        <li>• Link Profile Audit</li>
-                        <li>• Revenue Tracking</li>
-                    </ul>
+                <h1 data-aos="fade-up" class="text-6xl md:text-[100px] leading-[0.9] font-extrabold tracking-tighter mb-10 serif italic">
+                    Turning Search <br><span class="text-indigo-600">Into Revenue.</span>
+                </h1>
+                <p data-aos="fade-up" data-aos-delay="100" class="text-xl text-gray-500 max-w-2xl mx-auto leading-relaxed mb-12">
+                    I design organic growth engines for companies that value precision over noise. 4+ years of engineering first-page dominance.
+                </p>
+                <div data-aos="fade-up" data-aos-delay="200" class="flex flex-col sm:flex-row justify-center gap-6">
+                    <a href="#contact" class="bg-black text-white px-12 py-6 rounded-full font-bold text-sm tracking-widest hover:scale-105 transition-transform">Get a Free Audit</a>
+                    <a href="#results" class="bg-transparent border-b-2 border-black px-4 py-6 font-bold text-sm tracking-widest">Case Studies</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="results" class="py-24 bg-black text-white overflow-hidden">
+    <section class="py-12 border-y border-gray-100">
         <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-                <div data-aos="fade-right">
-                    <h2 class="text-4xl md:text-5xl font-extrabold mb-8">Real Numbers. <br>Real Impact.</h2>
-                    <div class="space-y-10">
-                        <div>
-                            <div class="text-5xl font-bold gradient-text mb-2">+245%</div>
-                            <p class="text-gray-400 font-medium">Organic Traffic Increase for E-commerce Client</p>
-                        </div>
-                        <div>
-                            <div class="text-5xl font-bold gradient-text mb-2">#1 Rank</div>
-                            <p class="text-gray-400 font-medium">For high-competition SaaS keywords within 4 months</p>
-                        </div>
+            <p class="text-center text-[10px] font-bold uppercase tracking-[0.4em] text-gray-400 mb-8">Trusted by industry leaders</p>
+            <div class="flex flex-wrap justify-center gap-12 md:gap-24 opacity-40 grayscale items-center">
+                <span class="text-2xl font-black italic">TECHFLOW</span>
+                <span class="text-2xl font-black tracking-tighter">NEXUS.</span>
+                <span class="text-2xl font-serif font-bold italic">Lumina</span>
+                <span class="text-2xl font-black">FORTUNE</span>
+                <span class="text-2xl font-mono font-bold tracking-widest">CORE</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="py-32 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20">
+                <div>
+                    <h2 class="text-sm font-bold text-indigo-600 uppercase tracking-[0.4em] mb-6">The Methodology</h2>
+                    <h3 class="text-5xl font-extrabold leading-tight mb-10 tracking-tighter">How we achieve <br>sustainable growth.</h3>
+                    
+                    <div class="space-y-6">
+                        <template x-for="i in [1,2,3,4]">
+                            <div @mouseenter="activeProcess = i" 
+                                 :class="activeProcess === i ? 'border-l-4 border-indigo-600 pl-6 bg-white py-6 shadow-sm rounded-r-xl' : 'border-l-4 border-gray-200 pl-6 py-6 opacity-50'"
+                                 class="transition-all duration-300 cursor-pointer">
+                                <h4 class="text-xl font-bold mb-2" x-text="i === 1 ? 'Discovery & Audit' : i === 2 ? 'The ROI Strategy' : i === 3 ? 'Technical Deployment' : 'Performance Scaling'"></h4>
+                                <p class="text-sm text-gray-500" x-show="activeProcess === i">We go beyond surface metrics to find hidden revenue opportunities in your data.</p>
+                            </div>
+                        </template>
                     </div>
                 </div>
-                <div data-aos="zoom-in" class="bg-zinc-900 border border-zinc-800 p-8 rounded-3xl">
-                    <div class="h-64 flex items-end justify-between gap-2">
-                        <div class="bg-indigo-500 w-full h-12 rounded-t-lg"></div>
-                        <div class="bg-indigo-500 w-full h-24 rounded-t-lg"></div>
-                        <div class="bg-indigo-500 w-full h-40 rounded-t-lg"></div>
-                        <div class="bg-indigo-500 w-full h-32 rounded-t-lg"></div>
-                        <div class="bg-indigo-600 w-full h-56 rounded-t-lg shadow-[0_-10px_30px_rgba(99,102,241,0.5)]"></div>
+                <div class="hidden md:flex items-center justify-center">
+                    <div class="w-full h-[500px] bg-white rounded-[3rem] premium-shadow border border-gray-100 relative overflow-hidden flex items-center justify-center">
+                         <div class="text-center">
+                            <span class="text-[120px] font-black text-gray-50" x-text="'0' + activeProcess"></span>
+                            <p class="font-bold tracking-widest uppercase text-indigo-600 -mt-12 relative z-10">Phase Step</p>
+                         </div>
                     </div>
-                    <p class="text-center mt-6 text-sm font-bold text-gray-500 tracking-widest uppercase">Organic Growth Index</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-24 bg-white">
-        <div class="container mx-auto px-6 max-w-3xl">
-            <div class="text-center mb-16">
-                <h2 data-aos="fade-up" class="text-4xl font-extrabold mb-4">Let's Build Your Growth Engine</h2>
-                <p data-aos="fade-up" data-aos-delay="100" class="text-gray-500 font-medium">Book a 15-minute intro call to discuss your project.</p>
+    <section id="results" class="py-32 relative overflow-hidden bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="md:col-span-1">
+                    <h2 class="text-4xl font-extrabold tracking-tighter mb-6 serif italic">Measured Success.</h2>
+                    <p class="text-gray-500 font-medium">I don't believe in vanity metrics. We focus on clicks that turn into customers.</p>
+                </div>
+                <div class="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="p-10 bg-white border border-gray-100 premium-shadow rounded-3xl">
+                        <div class="text-6xl font-extrabold mb-4 tracking-tighter">245%</div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-indigo-600 mb-4">E-commerce Case</p>
+                        <p class="text-gray-500 text-sm">Revenue growth within 6 months of technical SEO restructuring.</p>
+                    </div>
+                    <div class="p-10 bg-white border border-gray-100 premium-shadow rounded-3xl">
+                        <div class="text-6xl font-extrabold mb-4 tracking-tighter">180k+</div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-indigo-600 mb-4">SaaS Performance</p>
+                        <p class="text-gray-500 text-sm">Monthly organic visitors scaled from zero for a Series A startup.</p>
+                    </div>
+                </div>
             </div>
-            <form action="https://formspree.io/f/mbdqbdew" method="POST" class="space-y-6">
-
-    <input type="hidden" name="_captcha" value="false">
-
-    <div class="grid md:grid-cols-2 gap-6">
-        <input type="text" name="name" placeholder="Your Name" required class="w-full bg-gray-50 p-5 rounded-2xl">
-        <input type="email" name="email" placeholder="Work Email" required class="w-full bg-gray-50 p-5 rounded-2xl">
-    </div>
-
-    <input type="text" name="website" placeholder="Company Website URL" class="w-full bg-gray-50 p-5 rounded-2xl">
-
-    <textarea name="message" rows="4" placeholder="How can I help you grow?" class="w-full bg-gray-50 p-5 rounded-2xl"></textarea>
-
-    <button type="submit" class="w-full btn-gradient text-white p-5 rounded-2xl">
-        Send Message
-    </button>
-
-</form>
-
         </div>
     </section>
 
-    <footer class="py-12 border-t border-gray-100">
-        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
-            <div class="mb-4 md:mb-0">
-                <span class="text-black font-extrabold mr-4">VIPUL DULANI</span> © 2026. All rights reserved.
+    <section id="contact" class="py-32">
+        <div class="container mx-auto px-6">
+            <div class="bg-black rounded-[4rem] p-12 md:p-24 text-white relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-1/2 h-full bg-indigo-600/20 blur-[120px]"></div>
+                <div class="max-w-xl relative z-10">
+                    <h2 class="text-5xl font-extrabold mb-8 tracking-tighter serif italic">Let's discuss your <br>next milestone.</h2>
+                    <p class="text-gray-400 mb-12 text-lg">Currently accepting 2 new clients for Q3. If you want results, let's talk.</p>
+                    
+                    <form action="https://formspree.io/f/mbdqbdew" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-2 gap-4">
+                            <input type="text" name="name" placeholder="Name" class="w-full bg-white/10 border border-white/20 p-5 rounded-2xl outline-none focus:border-indigo-500 transition">
+                            <input type="email" name="email" placeholder="Email" class="w-full bg-white/10 border border-white/20 p-5 rounded-2xl outline-none focus:border-indigo-500 transition">
+                        </div>
+                        <textarea name="message" rows="4" placeholder="Your Growth Goals" class="w-full bg-white/10 border border-white/20 p-5 rounded-2xl outline-none focus:border-indigo-500 transition"></textarea>
+                        <button class="w-full bg-white text-black py-6 rounded-2xl font-bold tracking-widest uppercase hover:bg-indigo-600 hover:text-white transition-all">Submit Application</button>
+                    </form>
+                </div>
             </div>
-            <div class="flex space-x-8 font-semibold">
+        </div>
+    </section>
+
+    <footer class="py-20 bg-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center border-t border-gray-100 pt-12">
+            <div class="text-sm font-bold uppercase tracking-widest mb-6 md:mb-0">Vipul Dulani © 2026</div>
+            <div class="flex space-x-12 text-xs font-bold uppercase tracking-widest text-gray-400">
                 <a href="#" class="hover:text-black">LinkedIn</a>
                 <a href="#" class="hover:text-black">Twitter</a>
-                <a href="#" class="hover:text-black">Email</a>
+                <a href="#" class="hover:text-black">Behance</a>
             </div>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        // Initialize Animations
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
-        });
+        AOS.init({ duration: 1200, once: true });
     </script>
 </body>
 </html>
