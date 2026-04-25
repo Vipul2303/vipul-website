@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Vipul Dulani | Strategic SEO Consultant & Growth Advisor</title>
-    <meta name="description" content="Independent SEO consultancy by Vipul Dulani. 4+ years of expertise scaling organic revenue for SaaS, E-commerce, and Global Brands. Data-driven, ROI-focused.">
-    <meta name="keywords" content="SEO Consultant, Digital Marketing Advisor, Vipul Dulani, Technical SEO Expert, Organic Growth Strategy">
+    <meta name="description" content="Independent SEO consultancy by Vipul Dulani. 4+ years of expertise scaling organic revenue for SaaS, E-commerce, and Global Brands. Data-driven, ROI-focused audits.">
+    <meta name="keywords" content="SEO Consultant, Digital Marketing Advisor, Vipul Dulani, Technical SEO Audit, Organic Growth Strategy, Free SEO Report">
     <meta name="author" content="Vipul Dulani">
     <link rel="canonical" href="https://vipul-website.vercel.app/">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://vipul-website.vercel.app/">
     <meta property="og:title" content="Vipul Dulani | Strategic SEO & Growth Advisory">
-    <meta property="og:description" content="Engineering organic dominance for modern brands. 4+ years of data-driven results.">
+    <meta property="og:description" content="Engineering organic dominance through data. Request your free website audit today.">
     <meta property="og:image" content="https://vipul-website.vercel.app/og-image.jpg">
 
     <script type="application/ld+json">
@@ -28,13 +28,17 @@
         "url": "https://vipul-website.vercel.app/",
         "knowsAbout": ["Technical SEO", "Growth Marketing", "Search Engine Optimization"]
       },
-      "description": "Premium SEO consultancy with 4+ years of experience in organic growth.",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "50"
+      },
       "areaServed": "Global"
     }
     </script>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Plus+Jakarta+Sans:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&family=Plus+Jakarta+Sans:wght@200;400;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
@@ -43,19 +47,19 @@
         body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--bg); color: #ffffff; }
         .serif { font-family: 'Cormorant Garamond', serif; }
         .text-accent { color: var(--accent); }
-        .border-accent { border-color: var(--accent); }
-        
-        /* Premium Background Texture */
-        .bg-vignette { background: radial-gradient(circle at center, #0a0a0a 0%, #050505 100%); }
         .nav-blur { background: rgba(5, 5, 5, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.05); }
         
-        /* High-End Card Hover */
-        .luxury-card { border: 1px solid rgba(255,255,255,0.05); transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1); }
-        .luxury-card:hover { border-color: var(--accent); background: rgba(197,163,88,0.03); transform: translateY(-5px); }
+        /* Premium Card Design */
+        .trust-card { 
+            background: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+            border: 1px solid rgba(255,255,255,0.05); 
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); 
+        }
+        .trust-card:hover { border-color: var(--accent); background: rgba(197,163,88,0.03); transform: translateY(-5px); }
     </style>
 </head>
 
-<body class="bg-vignette">
+<body class="bg-[#050505]">
 
     <nav class="fixed w-full z-[100] nav-blur h-24">
         <div class="container mx-auto px-8 h-full flex justify-between items-center">
@@ -64,10 +68,10 @@
                 <span class="text-[9px] tracking-[0.6em] uppercase text-accent font-bold mt-1">Growth Advisory</span>
             </div>
             <div class="hidden md:flex space-x-12 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-500">
-                <a href="#specialization" class="hover:text-white transition">Practice</a>
-                <a href="#approach" class="hover:text-white transition">Methodology</a>
-                <a href="#results" class="hover:text-white transition text-accent">Performance</a>
-                <a href="#contact" class="border border-white/20 px-6 py-2 hover:bg-white hover:text-black transition">Inquire</a>
+                <a href="#about" class="hover:text-white transition">The Expert</a>
+                <a href="#results" class="hover:text-white transition">Impact</a>
+                <a href="#faq" class="hover:text-white transition">FAQ</a>
+                <a href="#contact" class="bg-accent text-black px-6 py-2 hover:bg-white transition ml-4">Get My Audit</a>
             </div>
         </div>
     </nav>
@@ -77,164 +81,113 @@
             <div class="max-w-6xl">
                 <div data-aos="fade-right" class="inline-flex items-center space-x-4 mb-10">
                     <span class="h-[1px] w-12 bg-accent"></span>
-                    <span class="text-accent text-[11px] font-bold uppercase tracking-[.4em]">4+ Years of Strategic Dominance</span>
+                    <span class="text-accent text-[11px] font-bold uppercase tracking-[.4em]">4+ Years of Performance Marketing</span>
                 </div>
                 
                 <h1 data-aos="fade-up" class="text-7xl md:text-[110px] leading-[0.85] font-light serif italic mb-16">
-                    Translating Search Into <br>
-                    <span class="text-white font-bold not-italic tracking-tighter">Market Authority.</span>
+                    Minimalist Strategy. <br>
+                    <span class="text-white font-bold not-italic tracking-tighter">Maximum Revenue.</span>
                 </h1>
 
                 <div class="grid md:grid-cols-12 gap-12 border-t border-white/10 pt-16">
-                    <div class="md:col-span-6" data-aos="fade-up" data-aos-delay="200">
-                        <p class="text-2xl text-gray-400 leading-relaxed font-light">
-                            Independent advisor specializing in high-stakes SEO. I build organic engines for brands that prioritize sustainable revenue over vanity metrics.
+                    <div class="md:col-span-7" data-aos="fade-up" data-aos-delay="200">
+                        <p class="text-2xl text-gray-400 leading-relaxed font-light italic serif">
+                            I help businesses grow with organic search. I start by auditing your foundation, sharing a clear report, and then engineering your dominance.
                         </p>
                     </div>
-                    <div class="md:col-span-6 flex md:justify-end items-center space-x-16" data-aos="fade-left">
-                        <div class="text-center">
-                            <span class="text-6xl font-light block mb-2 serif italic">50<span class="text-accent">+</span></span>
-                            <span class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">Global Audits</span>
-                        </div>
-                        <div class="text-center">
-                            <span class="text-6xl font-light block mb-2 serif italic">ROI</span>
-                            <span class="text-[10px] text-gray-600 uppercase tracking-widest font-bold">Focused Practice</span>
-                        </div>
+                    <div class="md:col-span-5 flex md:justify-end items-center" data-aos="fade-left">
+                        <a href="#contact" class="text-white border border-white/20 px-10 py-5 font-bold uppercase tracking-widest text-[11px] hover:border-accent hover:text-accent transition duration-500">
+                            Claim Your Basic Report
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 border-y border-white/5 opacity-30 grayscale invert">
-        <div class="container mx-auto px-8 flex flex-wrap justify-between gap-12 items-center text-xl font-bold">
-            <span>SaaS GROWTH</span>
-            <span class="serif italic">E-Com Weekly</span>
-            <span>VENTURE.CAP</span>
-            <span class="font-mono">TECH.ADVISOR</span>
-            <span class="serif">B2B.GLOBAL</span>
-        </div>
-    </section>
-
-    <section id="specialization" class="py-40">
+    <section id="results" class="py-40 bg-white/5 border-y border-white/5">
         <div class="container mx-auto px-8">
-            <div class="grid md:grid-cols-2 gap-24 mb-32 items-end">
-                <div>
-                    <h2 class="text-accent text-[11px] font-bold uppercase tracking-[.6em] mb-8">Specialization</h2>
-                    <h3 class="text-5xl md:text-7xl serif italic leading-tight">Cross-Industry expertise. Proven outcomes.</h3>
-                </div>
-                <p class="text-xl text-gray-500 font-light leading-relaxed">
-                    My practice is built on 4+ years of engineering organic success across diverse digital ecosystems—from high-SKU E-commerce to complex SaaS product-led growth.
-                </p>
+            <div class="text-center mb-24">
+                <h2 class="text-accent text-[11px] font-bold uppercase tracking-[.6em] mb-6">Proven Outcomes</h2>
+                <h3 class="text-5xl serif italic">The Impact of 4+ Years.</h3>
             </div>
-
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="luxury-card p-12" data-aos="fade-up">
-                    <h4 class="text-2xl serif mb-6 italic">Enterprise E-Commerce</h4>
-                    <p class="text-sm text-gray-500 leading-relaxed mb-8">Scaling visibility for 10k+ SKU inventories through technical infrastructure and faceted search optimization.</p>
+                <div class="trust-card p-12 text-center" data-aos="fade-up">
+                    <div class="text-5xl font-bold mb-4 tracking-tighter">+245%</div>
+                    <p class="text-accent text-[10px] font-bold uppercase tracking-widest mb-6 italic">Organic Traffic Scaling</p>
+                    <p class="text-gray-500 text-sm">Average inbound growth for E-commerce partners within 12 months.</p>
                 </div>
-                <div class="luxury-card p-12 bg-white/[0.02]" data-aos="fade-up" data-aos-delay="100">
-                    <h4 class="text-2xl serif mb-6 italic">B2B SaaS Growth</h4>
-                    <p class="text-sm text-gray-500 leading-relaxed mb-8">Building authority-driven content silos that turn information seekers into qualified trial users.</p>
+                <div class="trust-card p-12 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl font-bold mb-4 tracking-tighter">#1 Rank</div>
+                    <p class="text-accent text-[10px] font-bold uppercase tracking-widest mb-6 italic">Market Penetration</p>
+                    <p class="text-gray-500 text-sm">Securing dominance for high-intent keywords across SaaS and B2B sectors.</p>
                 </div>
-                <div class="luxury-card p-12" data-aos="fade-up" data-aos-delay="200">
-                    <h4 class="text-2xl serif mb-6 italic">Technical Recovery</h4>
-                    <p class="text-sm text-gray-500 leading-relaxed mb-8">Diagnostic and remedial actions for brands impacted by core updates or legacy infrastructure issues.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="approach" class="py-40 bg-white text-black">
-        <div class="container mx-auto px-8">
-            <div class="grid md:grid-cols-2 gap-24 items-center">
-                <div>
-                    <h2 class="text-[10px] font-bold text-gray-400 uppercase tracking-[.5em] mb-8">The Advantage</h2>
-                    <h3 class="text-5xl md:text-7xl serif font-semibold italic mb-10 leading-tight">Why partners choose this practice.</h3>
-                    <div class="space-y-8">
-                        <div class="flex items-start space-x-6">
-                            <span class="text-2xl serif italic text-accent font-bold">01/</span>
-                            <div>
-                                <h4 class="font-bold uppercase tracking-tighter mb-2">Direct Expert Access</h4>
-                                <p class="text-gray-500 text-sm italic">Zero junior managers. You collaborate directly with a senior specialist on every strategic execution.</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-6">
-                            <span class="text-2xl serif italic text-accent font-bold">02/</span>
-                            <div>
-                                <h4 class="font-bold uppercase tracking-tighter mb-2">Revenue-First Methodology</h4>
-                                <p class="text-gray-500 text-sm italic">We ignore vanity metrics. Every action is measured against its contribution to your pipeline value.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="aspect-[4/5] bg-gray-100 flex items-center justify-center p-20 text-center">
-                        <p class="serif italic text-3xl leading-relaxed">"SEO is no longer about keywords; it's about <span class="font-bold">Trust Architecture</span>."</p>
-                    </div>
+                <div class="trust-card p-12 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl font-bold mb-4 tracking-tighter">4.9/5</div>
+                    <p class="text-accent text-[10px] font-bold uppercase tracking-widest mb-6 italic">Client Trust Score</p>
+                    <p class="text-gray-500 text-sm">Consistent satisfaction across 50+ strategic audits and consultations.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="results" class="py-40 border-y border-white/5">
-        <div class="container mx-auto px-8">
-            <div class="text-center mb-24">
-                <h2 class="text-accent text-[11px] font-bold uppercase tracking-[.6em] mb-6">Performance Report</h2>
-                <h3 class="text-5xl serif italic">Tangible Impact.</h3>
-            </div>
-            <div class="grid md:grid-cols-3 gap-12">
-                <div class="text-center">
-                    <span class="text-7xl font-bold mb-4 block tracking-tighter">+245%</span>
-                    <span class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Avg. Revenue Increase</span>
-                </div>
-                <div class="text-center">
-                    <span class="text-7xl font-bold mb-4 block tracking-tighter">#1 Rank</span>
-                    <span class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Market Leading Terms</span>
-                </div>
-                <div class="text-center">
-                    <span class="text-7xl font-bold mb-4 block tracking-tighter">30M+</span>
-                    <span class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Total Traffic Scaled</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-40">
+    <section id="faq" class="py-40">
         <div class="container mx-auto px-8 max-w-4xl">
-            <div class="text-center mb-24">
-                <h2 class="text-5xl md:text-7xl font-light serif italic mb-8">Request a Strategic Review.</h2>
-                <p class="text-accent text-[10px] font-bold uppercase tracking-[.6em]">Currently accepting 3 new clients for Q3 2026</p>
+            <h2 class="text-center text-accent text-[11px] font-bold uppercase tracking-[.6em] mb-20">Frequently Asked</h2>
+            <div class="space-y-6" x-data="{ active: null }">
+                <template x-for="(faq, index) in [
+                    {q: 'What does the free website audit include?', a: 'It is a forensic review of your technical SEO, site speed, and keyword health. I identify exactly what is holding your growth back.'},
+                    {q: 'How long until we see organic growth?', a: 'Typical structural shifts show impact in 4-8 weeks, while authority building compounds over 6-12 months.'},
+                    {q: 'Do you work with startups or established brands?', a: 'My experience of 4+ years covers both scaling startups and enterprise-level E-commerce platforms.'}
+                ]">
+                    <div class="border-b border-white/10 pb-6">
+                        <button @click="active = active === index ? null : index" class="w-full flex justify-between items-center text-left py-4 outline-none">
+                            <span class="text-lg font-light serif italic" x-text="faq.q"></span>
+                            <span class="text-accent text-2xl" x-text="active === index ? '−' : '+'"></span>
+                        </button>
+                        <div x-show="active === index" x-transition class="text-sm text-gray-500 leading-relaxed pb-4" x-text="faq.a"></div>
+                    </div>
+                </template>
             </div>
-            
-            <form action="https://formspree.io/f/mbdqbdew" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        </div>
+    </section>
+
+    <section id="contact" class="py-40 bg-white text-black">
+        <div class="container mx-auto px-8 max-w-4xl">
+            <div class="text-center mb-20">
+                <h2 class="text-6xl md:text-8xl serif italic leading-none mb-10">Start with <br>an Audit.</h2>
+                <p class="text-gray-500 uppercase tracking-[.4em] text-[10px] font-bold">Vipul personally audits every submission</p>
+            </div>
+
+            <form action="https://formspree.io/f/mbdqbdew" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-16">
                 <div class="space-y-10">
-                    <input type="text" name="name" placeholder="YOUR NAME" required class="w-full bg-transparent border-b border-white/10 py-5 focus:border-accent outline-none transition text-xs font-bold tracking-widest uppercase">
-                    <input type="email" name="email" placeholder="WORK EMAIL" required class="w-full bg-transparent border-b border-white/10 py-5 focus:border-accent outline-none transition text-xs font-bold tracking-widest uppercase">
+                    <input type="text" name="name" placeholder="YOUR NAME" required class="w-full bg-transparent border-b border-black/10 py-5 focus:border-black outline-none transition text-[10px] font-bold tracking-widest uppercase">
+                    <input type="email" name="email" placeholder="EMAIL ADDRESS" required class="w-full bg-transparent border-b border-black/10 py-5 focus:border-black outline-none transition text-[10px] font-bold tracking-widest uppercase">
                 </div>
                 <div class="space-y-10">
-                    <input type="url" name="website" placeholder="WEBSITE URL" class="w-full bg-transparent border-b border-white/10 py-5 focus:border-accent outline-none transition text-xs font-bold tracking-widest uppercase">
-                    <select name="goal" class="w-full bg-transparent border-b border-white/10 py-5 focus:border-accent outline-none transition text-xs font-bold tracking-widest uppercase text-gray-500">
-                        <option value="scaling">Organic Scaling</option>
-                        <option value="technical">Technical Fixes</option>
-                        <option value="strategy">Full Advisory</option>
-                    </select>
+                    <input type="url" name="website" placeholder="WEBSITE URL (REQUIRED)" required class="w-full bg-transparent border-b border-black/10 py-5 focus:border-black outline-none transition text-[10px] font-bold tracking-widest uppercase">
+                    <input type="text" name="goal" placeholder="PRIMARY GROWTH GOAL" class="w-full bg-transparent border-b border-black/10 py-5 focus:border-black outline-none transition text-[10px] font-bold tracking-widest uppercase">
                 </div>
-                <button type="submit" class="md:col-span-2 mt-12 bg-white text-black py-8 text-[11px] font-bold uppercase tracking-[.5em] hover:bg-accent hover:text-white transition-all duration-700">
-                    Initialize Consultation
+                <button type="submit" class="md:col-span-2 bg-black text-white py-8 text-[11px] font-bold uppercase tracking-[0.4em] hover:bg-accent transition duration-700">
+                    Request My Basic Report
                 </button>
             </form>
+            <p class="text-center mt-12 text-[9px] text-gray-400 uppercase tracking-widest">Initial audits are free. Direct consultation starts post-report.</p>
         </div>
     </section>
 
-    <footer class="py-20 border-t border-white/5 text-center text-gray-600">
+    <footer class="py-12 border-t border-white/5 text-center text-gray-600">
         <div class="container mx-auto px-8">
             <span class="text-[10px] font-bold uppercase tracking-[.4em] mb-4 block text-white">Vipul Dulani</span>
-            <p class="text-[10px] tracking-widest">© 2026 GROWTH ADVISORY. ALL RIGHTS RESERVED.</p>
+            <div class="flex justify-center space-x-12 mb-8 text-[9px] font-bold uppercase tracking-widest">
+                <a href="#" class="hover:text-accent transition">LinkedIn</a>
+                <a href="#" class="hover:text-accent transition">Twitter</a>
+            </div>
+            <p class="text-[8px] tracking-[0.3em] uppercase opacity-40">© 2026 Strategic SEO Advisory. Built for Growth.</p>
         </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1200, once: true });</script>
+    <script>AOS.init({ duration: 1500, once: true });</script>
 </body>
 </html>
