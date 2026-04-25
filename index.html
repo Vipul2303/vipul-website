@@ -171,15 +171,53 @@
                 <p data-aos="fade-up" data-aos-delay="100" class="text-gray-500 font-medium">Book a 15-minute intro call to discuss your project.</p>
             </div>
             
-            <form data-aos="fade-up" class="space-y-6" <form action="https://formspree.io/f/mbdqbdew" method="POST">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <input type="text" placeholder="Your Name" required class="w-full bg-gray-50 border border-gray-100 p-5 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none transition">
-                    <input type="email" placeholder="Work Email" required class="w-full bg-gray-50 border border-gray-100 p-5 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none transition">
-                </div>
-                <input type="text" placeholder="Company Website URL" class="w-full bg-gray-50 border border-gray-100 p-5 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none transition">
-                <textarea rows="4" placeholder="How can I help you grow?" class="w-full bg-gray-50 border border-gray-100 p-5 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none transition"></textarea>
-                <button type="submit" class="w-full btn-gradient text-white font-bold p-5 rounded-2xl text-lg">Send Message</button>
-            </form>
+<form 
+    action="https://formspree.io/f/mbdqbdew" 
+    method="POST" 
+    data-aos="fade-up"
+    class="space-y-6"
+>
+
+    <div class="grid md:grid-cols-2 gap-6">
+        <input 
+            type="text" 
+            name="name"
+            placeholder="Your Name" 
+            required 
+            class="w-full bg-gray-50 border border-gray-100 p-5 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none transition"
+        >
+
+        <input 
+            type="email" 
+            name="email"
+            placeholder="Work Email" 
+            required 
+            class="w-full bg-gray-50 border border-gray-100 p-5 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none transition"
+        >
+    </div>
+
+    <input 
+        type="text" 
+        name="website"
+        placeholder="Company Website URL" 
+        class="w-full bg-gray-50 border border-gray-100 p-5 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none transition"
+    >
+
+    <textarea 
+        name="message"
+        rows="4" 
+        placeholder="How can I help you grow?" 
+        class="w-full bg-gray-50 border border-gray-100 p-5 rounded-2xl focus:ring-2 focus:ring-indigo-500 outline-none transition"
+    ></textarea>
+
+    <button 
+        type="submit" 
+        class="w-full btn-gradient text-white font-bold p-5 rounded-2xl text-lg"
+    >
+        Send Message
+    </button>
+
+</form>
         </div>
     </section>
 
