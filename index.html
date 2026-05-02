@@ -864,96 +864,44 @@
       </div>
     </section>
 
-<!-- ============== CTA / LEAD CAPTURE ============== -->
-<section id="contact" class="py-24 md:py-32">
-  <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-    <div class="reveal relative bg-cream rounded-3xl border border-ink-100 overflow-hidden p-8 sm:p-12 md:p-16">
+<form action="https://formspree.io/f/mbdqbdew" method="POST">
 
-      <div class="relative grid lg:grid-cols-12 gap-10 items-start">
-        
-        <!-- LEFT CONTENT (unchanged) -->
-        <div class="lg:col-span-6">
-          <!-- your content stays same -->
-        </div>
+  <div class="bg-ink-900 rounded-2xl p-6 sm:p-8 text-cream relative">
 
-        <!-- RIGHT FORM -->
-        <div class="lg:col-span-6">
-          
-          <!-- 🔥 FORM START -->
-          <form action="https://formspree.io/f/mbdqbdew" method="POST">
-            
-            <div class="bg-ink-900 rounded-2xl p-6 sm:p-8 text-cream relative">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                
-                <div>
-                  <label class="block text-[12px] uppercase tracking-wider text-cream/60 mb-2">Your name</label>
-                  <input 
-                    name="name"
-                    type="text" 
-                    required
-                    placeholder="Aarav Mehta"
-                    class="w-full bg-cream/5 border border-cream/15 rounded-lg px-4 py-3 text-[15px] placeholder:text-cream/30 focus:border-accent-300 focus:bg-cream/10 outline-none transition" 
-                  />
-                </div>
-
-                <div>
-                  <label class="block text-[12px] uppercase tracking-wider text-cream/60 mb-2">Work email</label>
-                  <input 
-                    name="email"
-                    type="email" 
-                    required
-                    placeholder="aarav@company.com"
-                    class="w-full bg-cream/5 border border-cream/15 rounded-lg px-4 py-3 text-[15px] placeholder:text-cream/30 focus:border-accent-300 focus:bg-cream/10 outline-none transition" 
-                  />
-                </div>
-
-              </div>
-
-              <div class="mt-4">
-                <label class="block text-[12px] uppercase tracking-wider text-cream/60 mb-2">Website URL</label>
-                <input 
-                  name="website"
-                  type="url" 
-                  placeholder="https://yourcompany.com"
-                  class="w-full bg-cream/5 border border-cream/15 rounded-lg px-4 py-3 text-[15px] placeholder:text-cream/30 focus:border-accent-300 focus:bg-cream/10 outline-none transition" 
-                />
-              </div>
-
-              <div class="mt-4">
-                <label class="block text-[12px] uppercase tracking-wider text-cream/60 mb-2">Top SEO goal (optional)</label>
-                <textarea 
-                  name="message"
-                  rows="3"
-                  placeholder="Rank for [keyword], scale organic MQLs, fix indexing issues…"
-                  class="w-full bg-cream/5 border border-cream/15 rounded-lg px-4 py-3 text-[15px] placeholder:text-cream/30 focus:border-accent-300 focus:bg-cream/10 outline-none transition resize-none">
-                </textarea>
-              </div>
-
-              <!-- Optional redirect -->
-              <input type="hidden" name="_next" value="https://yourdomain.com/thank-you">
-
-              <!-- SUBMIT BUTTON -->
-              <button 
-                type="submit"
-                class="mt-6 btn-accent w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full text-[15px] font-medium">
-                Send me my free audit
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M5 12h14M13 5l7 7-7 7"/>
-                </svg>
-              </button>
-
-              <p class="mt-4 text-center text-[12px] text-cream/40">
-                By submitting you agree to receive a single response email. No spam, ever.
-              </p>
-            </div>
-          </form>
-        </div>
+      <div>
+        <label class="block text-[12px] uppercase tracking-wider text-cream/60 mb-2">Your name</label>
+        <input name="name" type="text" required class="w-full bg-cream/5 border border-cream/15 rounded-lg px-4 py-3" />
       </div>
-    </div>
-  </div>
-</section>
 
+      <div>
+        <label class="block text-[12px] uppercase tracking-wider text-cream/60 mb-2">Work email</label>
+        <input name="email" type="email" required class="w-full bg-cream/5 border border-cream/15 rounded-lg px-4 py-3" />
+      </div>
+
+    </div>
+
+    <div class="mt-4">
+      <label class="block text-[12px] uppercase tracking-wider text-cream/60 mb-2">Website</label>
+      <input name="website" type="url" class="w-full bg-cream/5 border border-cream/15 rounded-lg px-4 py-3" />
+    </div>
+
+    <div class="mt-4">
+      <label class="block text-[12px] uppercase tracking-wider text-cream/60 mb-2">Message</label>
+      <textarea name="message" rows="3" class="w-full bg-cream/5 border border-cream/15 rounded-lg px-4 py-3"></textarea>
+    </div>
+
+    <!-- IMPORTANT: remove redirect for testing -->
+    <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thank-you"> -->
+
+    <button type="submit" class="mt-6 btn-accent w-full px-6 py-4 rounded-full">
+      Send me my free audit
+    </button>
+
+  </div>
+
+</form>
     <!-- ============== FAQ ============== -->
     <section id="faq" class="py-24 md:py-32 bg-[var(--bg-2)] border-y border-ink-100">
       <div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
